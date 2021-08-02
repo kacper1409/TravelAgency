@@ -1,0 +1,70 @@
+#pills-tab {
+    font-size: large;
+}
+
+.container {
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    height: 70px;
+    background: #337ab7;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 35px;
+    z-index: 10;
+    float: right;
+    background: #337ab7;
+}
+
+.nav-logo:hover {
+    background: #337ab7;
+}
+
+ul li {
+    font-size:20px;
+}
+
+.nav-button {
+    color: white;
+}
+
+.nav-button:hover
+{
+    background: #285f90;
+}
+
+.nav-button:focus
+{
+    background: #285f90;
+}
+
+.nav-button-logged {
+    color: white;
+    
+}
+
+.nav-button-logged:hover
+{
+    background: #337ab7;
+}
+
+.nav-button-logged:focus
+{
+    background: #337ab7;
+}
+
+.nav-logo:focus
+{
+    background: #337ab7;
+}
+
+.nav-item-logged {
+    float: right;
+}
+
+
+
+
+

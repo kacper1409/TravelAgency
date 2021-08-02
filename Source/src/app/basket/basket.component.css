@@ -1,0 +1,26 @@
+.card {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+
+    width: 18rem;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+    background: #337ab7;
+    color: white;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.fa-trash-alt {
+    font-size: 20px;
+}
+
+.fa-trash-alt:hover
+{
+    color: red;
+}

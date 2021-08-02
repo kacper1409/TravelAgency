@@ -1,0 +1,21 @@
+<div class="persist-section">
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="persistForm">
+
+        <div class="form-group" *ngIf="roleService.loggedEmail != null && roleService.loggedRole == roleService.ROLE_ADMIN">
+
+            <label class="label-style">Ustaw właściwość persystencji</label>
+            <br><br>
+            <select class="form-control" formControlName="persistence">
+                <option value="{{persistModeService.LOCAL_PROPERTY}}">LOCAL</option>
+                <option value="{{persistModeService.SESSION_PROPERTY}}" selected="selected">SESSION</option>
+                <option value="{{persistModeService.NONE_PROPERTY}}">NONE</option>
+            </select>
+
+        </div><br>
+
+        <button type="submit" class="btn btn-light">Zatwierdź</button>
+
+    </form>
+
+</div>

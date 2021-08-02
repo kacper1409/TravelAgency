@@ -1,0 +1,27 @@
+<p class="card-title" style="font-size: 25px; color: #337ab7; margin-left: 30px; margin-top: 30px;">Pozycje w koszyku</p> <br>
+
+<div class="trips-list">
+
+    <div *ngFor="let trip of trips" style="width: 300px;">
+    
+        <div class="card">
+
+            <div class="card-body">
+
+                <h5 class="card-title">{{ trip.name }}</h5>
+                <h5 class="card-title">{{ trip.country }}</h5>
+                <h5 class="card-title">Od: {{ trip.startDate }}</h5>
+                <h5 class="card-title">Do: {{ trip.endDate }}</h5>
+                <h5 class="card-title">{{ trip.price }} zł</h5>
+                <h5 class="card-title">Zakupiono szt: {{ trip.purchasedBy.length }}</h5>
+
+
+                <i (click)="deleteFromBasket(trip)" class="fas fa-trash-alt"></i>
+
+            </div>
+
+        </div><br><br>
+
+    </div>
+
+</div>
